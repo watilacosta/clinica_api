@@ -1,6 +1,10 @@
-class Api::V1::FuncionarioSerializer < ActiveModel::Serializer
-  attributes :id, :nome, :sobrenome, :telefone, :email, :cargo,
-             :cpf, :ctps, :pis, :endereco, :cidade, :uf
+module Api
+  module V1
+    class FuncionarioSerializer < ActiveModel::Serializer
+      attributes :id, :nome, :sobrenome, :telefone, :email, :cargo,
+                :cpf, :ctps, :pis, :endereco, :cidade, :uf
 
-  has_many :consultas
+      has_many :consultas
+    end
+  end
 end

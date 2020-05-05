@@ -19,7 +19,7 @@
 #  updated_at      :datetime         not null
 #
 class Funcionario < ApplicationRecord
-  has_many :consultas
+  has_many :consultas, dependent: :nullify
   
   has_secure_password
 

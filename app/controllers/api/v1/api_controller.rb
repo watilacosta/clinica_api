@@ -4,8 +4,8 @@ module Api
   module V1
     class ApiController < ApplicationController
       include Knock::Authenticable
-      # include CanCan::ControllerAdditions
-      serialization_scope :current_funcionario # adiciona a variavel de scopo e coloca no serializer
+      include CanCan::ControllerAdditions
+      serialization_scope :current_funcionario
 
       rescue_from ActiveRecord::RecordNotFound do |msg|
         render(json: { message: msg }, status: :not_found)
@@ -15,9 +15,9 @@ module Api
         render(json: { message: exception.param }, status: :bad_request)
       end
 
-      # rescue_from CanCan::AccessDenied do |msg|
-      #   render(json: { message: msg }, status: :forbidden)
-      # end
+      rescue_from CanCan::AccessDenied do |msg|
+        render(json: { message: msg }, status: :forbidden)
+      end
     end
   end
 end
