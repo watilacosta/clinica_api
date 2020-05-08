@@ -24,6 +24,8 @@ class Funcionario < ApplicationRecord
   has_secure_password
 
   enum cargo: {
-    admin: 1
+    medico: 0,
+    admin: 1,
+    recepcionista: 2
   }
 end
