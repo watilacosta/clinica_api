@@ -8,4 +8,5 @@
 #  updated_at :datetime         not null
 #
 class Especialidade < ApplicationRecord
+  validates :descricao, presence: true
 end

@@ -14,4 +14,10 @@
 #  updated_at :datetime         not null
 #
 class Convenio < ApplicationRecord
+  validates :empresa, 
+            :cnpj, 
+            :endereco, 
+            :cidade, 
+            :uf, 
+            :email, presence: true
 end

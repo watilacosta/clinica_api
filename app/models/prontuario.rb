@@ -12,4 +12,6 @@
 #
 class Prontuario < ApplicationRecord
   belongs_to :consulta
+
+  validates :consulta, presence: true
 end

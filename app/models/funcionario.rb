@@ -28,4 +28,8 @@ class Funcionario < ApplicationRecord
     admin: 1,
     recepcionista: 2
   }
+
+  validates :nome, :sobrenome, :telefone, :email, :cargo,
+            :cpf, :ctps, :pis, :endereco, :cidade, :uf,
+            length: { maximum: 200 }
 end

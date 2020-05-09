@@ -20,4 +20,14 @@
 #
 class Medico < ApplicationRecord
   belongs_to :especialidade
+
+  validates :nome, 
+            :sobrenome, 
+            :endereco, 
+            :email, 
+            :ctps, 
+            :cidade, 
+            :uf, 
+            :especialidade, 
+            :crm, presence: true
 end

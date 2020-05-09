@@ -18,4 +18,11 @@
 #  updated_at    :datetime         not null
 #
 class Paciente < ApplicationRecord
+  validates :nome,
+            :sobrenome,
+            :endereco,
+            :cidade,
+            :uf,
+            :cpf,
+            :sexo,, presence: true
 end
