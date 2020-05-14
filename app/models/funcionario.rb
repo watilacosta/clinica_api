@@ -21,6 +21,10 @@
 class Funcionario < ApplicationRecord
   has_many :consultas, dependent: :nullify
   
+  before_validation(on: :create) do 
+    self.password = '123456'
+  end
+  
   has_secure_password
 
   enum cargo: {
