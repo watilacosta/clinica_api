@@ -18,18 +18,18 @@ class CreateFuncionarios < ActiveRecord::Migration[6.0]
     end
 
     Funcionario.create!(
-      nome: 'Administrador',
-      sobrenome: '',
-      telefone: '',
-      email: '',
-      password: 'admin@123',
+      nome: 'Wátila',
+      sobrenome: 'Costa',
+      telefone: '85981704508',
+      email: 'watilafreire26@gmail.com',
+      password: '123456',
       cargo: :admin,
-      cpf: '',
+      cpf: '02905626356',
       ctps: '',
       pis: '',
-      endereco: '',
-      cidade: '',
-      uf: '',
+      endereco: 'Rua Prof. Heribaldo Costa, 591 - Centro',
+      cidade: 'Fortaleza',
+      uf: 'CE',
     )
     puts Funcionario.last
   end
