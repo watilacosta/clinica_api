@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class FuncionariosController < Api::V1::ApiController
@@ -11,7 +13,6 @@ module Api
 
       def create
         @funcionario = Funcionario.new(funcionario_params)
-        
         if @funcionario.save
           render json: @funcionario, status: :created
         else

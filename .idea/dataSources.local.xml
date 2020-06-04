@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails clinica_api: development" uuid="58a560cb-4c69-4db4-b57b-e6a31d737a4f">
+      <database-info product="PostgreSQL" version="10.12 (Ubuntu 10.12-0ubuntu0.18.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="10.12" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <auth-provider>pgpass</auth-provider>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="Rails clinica_api: production" uuid="490b7e78-da8b-4d8b-ac06-eccd37f72b95">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="GREENPLUM" exact-version="0" />
+      <auth-provider>pgpass</auth-provider>
+      <user-name>clinica_api</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Rails clinica_api: test" uuid="f8aeaf0b-a89d-4ac8-b38c-63f9f440f06c">
+      <database-info product="PostgreSQL" version="10.12 (Ubuntu 10.12-0ubuntu0.18.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="10.12" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <auth-provider>pgpass</auth-provider>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>
