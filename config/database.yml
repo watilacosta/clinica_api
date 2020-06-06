@@ -7,12 +7,14 @@ default: &default
 development:
   <<: *default
   database: clinica_api_development
+  host: localhost
   username: postgres
   password: postgres
 
 test:
   <<: *default
   database: clinica_api_test
+  host: localhost
   username: postgres
   password: postgres
 
