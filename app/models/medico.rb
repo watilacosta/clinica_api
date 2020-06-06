@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: medicos
@@ -21,13 +23,13 @@
 class Medico < ApplicationRecord
   belongs_to :especialidade
 
-  validates :nome, 
-            :sobrenome, 
-            :endereco, 
-            :email, 
-            :ctps, 
-            :cidade, 
-            :uf, 
-            :especialidade, 
+  validates :nome,
+            :sobrenome,
+            :endereco,
+            :email,
+            :ctps,
+            :cidade,
+            :uf,
+            :especialidade,
             :crm, presence: true
 end

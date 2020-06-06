@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: pacientes
@@ -24,5 +26,5 @@ class Paciente < ApplicationRecord
             :cidade,
             :uf,
             :cpf,
-            :sexo,, presence: true
+            :sexo, presence: true
 end

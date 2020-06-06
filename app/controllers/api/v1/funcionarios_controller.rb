@@ -2,6 +2,7 @@
 
 module Api
   module V1
+    # Controller de Funcionarios
     class FuncionariosController < Api::V1::ApiController
       before_action :authenticate_funcionario
       before_action :set_funcionario, only: %i[destroy update]

@@ -2,9 +2,11 @@
 
 module Api
   module V1
+    # Default Api Controller
     class ApiController < ApplicationController
       include Knock::Authenticable
       include CanCan::ControllerAdditions
+
       serialization_scope :current_funcionario
 
       rescue_from ActiveRecord::RecordNotFound do |msg|

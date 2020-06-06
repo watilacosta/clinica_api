@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: consultas
@@ -17,8 +19,8 @@ class Consulta < ApplicationRecord
   belongs_to :medico
   belongs_to :funcionario
 
-  validates :paciente, 
-            :medico, 
-            :funcionario, 
+  validates :paciente,
+            :medico,
+            :funcionario,
             :data, presence: true
 end
